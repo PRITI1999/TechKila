@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TechKila</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search for all items and stores</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Strings related to login -->
+</resources>

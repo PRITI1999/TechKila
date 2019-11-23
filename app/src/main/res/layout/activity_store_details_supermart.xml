@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".StoreDetailsSupermart">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/blambotcasual"
+            android:paddingBottom="90dp"
+            android:paddingTop="20dp"
+            android:text="Tap on the category you have"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="140dp" />
+
+            <Button
+                android:id="@+id/category0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showList"
+                android:fontFamily="@font/blambotcasual"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="Food and Beverages                  &gt;" />
+
+                <ScrollView
+                    android:id="@+id/foodAndBeveragesScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/category00"
+                            android:layout_width="290dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/blambotcasual"
+                            android:onClick="showList"
+                            android:text="Foodgrains, Oil and Masala              &gt;" />
+
+                        <ScrollView
+                            android:id="@+id/foodgrainsOilMasalaSupermartScrollView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <CheckedTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:onClick="showTick"
+                                    android:paddingLeft="30dp"
+                                    android:text="Rice"
+                                    android:textSize="25sp"
+                                    tools:layout_editor_absoluteX="59dp"
+                                    tools:layout_editor_absoluteY="118dp" />
+
+
+                                <CheckedTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:onClick="showTick"
+                                    android:paddingLeft="30dp"
+                                    android:text="Wheat"
+                                    android:textSize="25sp"
+                                    tools:layout_editor_absoluteX="59dp"
+                                    tools:layout_editor_absoluteY="118dp" />
+
+
+                                <CheckedTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:onClick="showTick"
+                                    android:paddingLeft="30dp"
+                                    android:text="Refined Oil"
+                                    android:textSize="25sp"
+                                    tools:layout_editor_absoluteX="59dp"
+                                    tools:layout_editor_absoluteY="118dp" />
+
+
+                                <CheckedTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:onClick="showTick"
+                                    android:paddingLeft="30dp"
+                                    android:text="Pulses"
+                                    android:textSize="25sp"
+                                    tools:layout_editor_absoluteX="59dp"
+                                    tools:layout_editor_absoluteY="118dp" />
+
+                            </LinearLayout>
+
+                        </ScrollView>
+
+                        <Button
+                            android:id="@+id/category01"
+                            android:layout_width="290dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="showList"
+                            android:fontFamily="@font/blambotcasual"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="70dp"
+                            android:text="Beverages and Snacks                  &gt;" />
+
+                        <ScrollView
+                            android:id="@+id/beveragesAndSnacksSupermartScrollView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <CheckedTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:onClick="showTick"
+                                    android:paddingLeft="30dp"
+                                    android:text="Buiscuits"
+                                    android:textSize="25sp"
+                                    tools:layout_editor_absoluteX="59dp"
+                                    tools:layout_editor_absoluteY="118dp" />
+
+                                <CheckedTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:onClick="showTick"
+                                    android:paddingLeft="30dp"
+                                    android:text="Mixtures"
+                                    android:textSize="25sp"
+                                    tools:layout_editor_absoluteX="59dp"
+                                    tools:layout_editor_absoluteY="118dp" />
+
+
+                                <CheckedTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:onClick="showTick"
+                                    android:paddingLeft="30dp"
+                                    android:text="Soft Drinks"
+                                    android:textSize="25sp"
+                                    tools:layout_editor_absoluteX="59dp"
+                                    tools:layout_editor_absoluteY="118dp" />
+
+                                <CheckedTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:onClick="showTick"
+                                    android:paddingLeft="30dp"
+                                    android:text="Chips"
+                                    android:textSize="25sp"
+                                    tools:layout_editor_absoluteX="59dp"
+                                    tools:layout_editor_absoluteY="118dp" />
+
+
+                            </LinearLayout>
+
+                        </ScrollView>
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+            <Button
+                android:id="@+id/category1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showList"
+                android:fontFamily="@font/blambotcasual"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="Cleaning and Household            &gt;" />
+
+            <ScrollView
+                android:id="@+id/cleaningAndHouseholdScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/category10"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/blambotcasual"
+                        android:onClick="showList"
+                        android:text="Liquid cleansers          &gt;" />
+
+                    <ScrollView
+                        android:id="@+id/liquidCleansersSupermartScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Floor cleaner"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Bathroom cleaner"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Toilet Cleaner"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                    <Button
+                        android:id="@+id/category11"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="showList"
+                        android:fontFamily="@font/blambotcasual"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="70dp"
+                        android:text="Brushes and accesories            &gt;" />
+
+                    <ScrollView
+                        android:id="@+id/brushesSupermartScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Mopping cloth"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Broom"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Toilet brush"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <Button
+                android:id="@+id/category2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showList"
+                android:fontFamily="@font/blambotcasual"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="Kitchen acessories                  &gt;" />
+
+
+            <ScrollView
+                android:id="@+id/kitchenAccessoriesScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/category20"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/blambotcasual"
+                        android:onClick="showList"
+                        android:text="Utensils      &gt;" />
+
+                    <ScrollView
+                        android:id="@+id/utensilsScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Cooker"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Frying Pan"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Steel Plates"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Spoons"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                    <Button
+                        android:id="@+id/category21"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="showList"
+                        android:fontFamily="@font/blambotcasual"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="70dp"
+                        android:text="Other accesories          &gt;" />
+
+                    <ScrollView
+                        android:id="@+id/otherAccessoriesScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Knife"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Chopping board"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Utensil stand"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/category3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showList"
+                android:fontFamily="@font/blambotcasual"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="Stationary                                   &gt;" />
+
+
+                 <ScrollView
+                     android:id="@+id/stationaryScrollView"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+                     app:layout_constraintBottom_toBottomOf="parent"
+                     app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Pens"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Pencil"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Colours"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Notebooks"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+
+                            <CheckedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="showTick"
+                                android:paddingLeft="30dp"
+                                android:text="Sketch Books"
+                                android:textSize="25sp"
+                                tools:layout_editor_absoluteX="59dp"
+                                tools:layout_editor_absoluteY="118dp" />
+                        </LinearLayout>
+                 </ScrollView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="SUBMIT"
+                android:onClick="submitButtonOnClickSupermart"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="SKIP"
+                android:onClick="skipButtonOnClickSupermart"/>
+
+        </LinearLayout>
+
+                 </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreDetailsGeneral"
+    android:background="@android:color/background_dark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blambotcasual"
+                android:paddingBottom="90dp"
+                android:paddingTop="20dp"
+                android:text="Tap on the category you have"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="140dp" />
+
+            <Button
+                android:id="@+id/category0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showList"
+                android:fontFamily="@font/blambotcasual"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="Foodgrains, Oil and Masala            &gt;" />
+
+            <ScrollView
+                android:id="@+id/foodgrainsOilMasalaScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Rice"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Wheat"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Toor Dal"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Urad Dal"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Mustard Oil"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Refined Oil"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Table salt"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Turmeric powder"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Sooji"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Poha/Chiwda"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/category1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blambotcasual"
+                android:onClick="showList"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="Beverages and Snacks                       &gt;" />
+
+            <ScrollView
+                android:id="@+id/beveragesSnacksScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Tea"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Coffee"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Green Tea"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Aloo Bhujiya"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Moong Dal"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Coke"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Mixture"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Energy drinks"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Chips"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Fried Peanuts"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/category2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blambotcasual"
+                android:onClick="showList"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="Cleaning and Household                  &gt;" />
+
+            <ScrollView
+                android:id="@+id/cleaningHouseholdScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Toilet Cleaner"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Bathroom Cleaner"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Phenyl"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Bleaching powder"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Dish wash bar"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Dish wash gel"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Washing powder"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Detergent bar"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Bathing soap"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Hand wash"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/category3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blambotcasual"
+                android:onClick="showList"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="Beauty and Hygiene                            &gt;" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/beautyHygieneScrollView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Facewash"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Shampoo"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Body oil"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Shower gel"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Beard Oil"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Shaving cream"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Deodorant"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Mouth wash"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Toothpaste"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Body lotion"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/category4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blambotcasual"
+                android:onClick="showList"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="Bakery and Dairy                               &gt;" />
+
+            <ScrollView
+                android:id="@+id/bakeryDairyScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Cake"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Pastry"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Rusk"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Milk"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Curd"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Paneer"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Butter"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Cheese"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Patties"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <CheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showTick"
+                        android:paddingLeft="30dp"
+                        android:text="Ghee"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="59dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="SUBMIT"
+                android:onClick="submitButtonOnClickGeneral"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="70dp"
+                android:text="SKIP"
+                android:onClick="skipButtonOnClickGeneral"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
